@@ -6,7 +6,12 @@ namespace HIMRogue
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var newGame = new Game();
+            newGame.Launch();
+
+            Console.WriteLine("\n\n----------------------------------------");
+            Console.WriteLine("Exiting HIMRogue. Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
