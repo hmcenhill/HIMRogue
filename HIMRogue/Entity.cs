@@ -4,11 +4,11 @@ using System.Text;
 
 namespace HIMRogue
 {
-    public enum TileType
+    public enum Entity
     {
-        Void = 0,
-        Room = 1,
-        Hall = 2,
-        Wall = 3
+        Terrain = 0,
+        Actor = 1,
+        Prop = 2,
+        Item = 3
     }
 }
