@@ -35,10 +35,7 @@ namespace HIMRogue
         }
         private void AttackTarget()
         {
-            if (Math.Abs(this.X - Target.X) + Math.Abs(this.Y - Target.Y) == 1)
-            {
-            }
-            else if (Math.Abs(this.X - Target.X) > Math.Abs(this.Y - Target.Y))
+            if (Math.Abs(this.X - Target.X) > Math.Abs(this.Y - Target.Y))
             {
                 if (this.X > Target.X)
                 {

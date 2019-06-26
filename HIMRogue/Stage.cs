@@ -51,9 +51,14 @@ namespace HIMRogue
 
                 actor.Act();
 
-                if (Map.Grid[actor.X, actor.Y].Ground != TileType.Room || Map.Grid[actor.X, actor.Y].Character != null)
+                if (Map.Grid[actor.X, actor.Y].Character != null)
                 {
                     actor.Bump(Map.Grid[actor.X, actor.Y].Character);
+                    actor.X = lastX;
+                    actor.Y = lastY;
+                }
+                if (Map.Grid[actor.X, actor.Y].Ground != TileType.Room)
+                {
                     actor.X = lastX;
                     actor.Y = lastY;
                 }
