@@ -9,6 +9,8 @@ namespace HIMRogue
         Void = 0,
         Room = 1,
         Hall = 2,
-        Wall = 3
+        HWall = 3,
+        VWall = 4,
+        CWall = 5
     }
 }

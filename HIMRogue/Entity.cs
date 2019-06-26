@@ -4,11 +4,12 @@ using System.Text;
 
 namespace HIMRogue
 {
-    public enum Entity
+    public abstract class Entity
     {
-        Terrain = 0,
-        Actor = 1,
-        Prop = 2,
-        Item = 3
+        public int X { get; set; }
+        public int Y { get; set; }
+        public Char Icon { get; set; }
+        public EntityType EType {get;set;}
+
     }
 }
